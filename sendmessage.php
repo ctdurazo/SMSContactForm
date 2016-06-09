@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: christian
+ * User: christian durazo
  * Date: 5/5/16
  * Time: 10:20 AM
  */
@@ -31,8 +31,8 @@ if (isset($_REQUEST['submit'])) {
 
 
     //create mail form
-    $from = "<bobbtables@gmail.com>";
-    $to = "<7045785610@vzwpix.com>";
+    $from = "<bobbtables@gmail.com>"; //replace with your email host
+    $to = "<7045785610@vzwpix.com>"; //replace with your SMS email, i.e. xxxxxxxxxx@vzwpix.com for verizon
     $subject = 'Message from a site visitor ' . $name;
 
     $body = 'From: ' . $name . "\n";
@@ -64,9 +64,9 @@ if (isset($_REQUEST['submit'])) {
     }
 
     //smtp authentication
-    $host = "smtp.gmail.com";
-    $username = "bobbtables@gmail.com";
-    $password = "tables123";
+    $host = "smtp.gmail.com";           //use your smtp host for your email host
+    $username = "bobbtables@gmail.com"; //use your email host username
+    $password = "tables123";            //use your email host password
 
     $headers = array('From' => $from,
         'To' => $to,
