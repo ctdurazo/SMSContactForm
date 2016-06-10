@@ -31,8 +31,8 @@ if (isset($_REQUEST['submit'])) {
 
 
     //create mail form
-    $from = "<bobbtables@gmail.com>"; //replace with your email host
-    $to = "<7045785610@vzwpix.com>"; //replace with your SMS email, i.e. xxxxxxxxxx@vzwpix.com for verizon
+    $from = "<address@email.com>"; //replace with your email host
+    $to = "<number@host.com>";     //replace with your SMS email, i.e. xxxxxxxxxx@vzwpix.com for verizon
     $subject = 'Message from a site visitor ' . $name;
 
     $body = 'From: ' . $name . "\n";
@@ -64,9 +64,9 @@ if (isset($_REQUEST['submit'])) {
     }
 
     //smtp authentication
-    $host = "smtp.gmail.com";           //use your smtp host for your email host
-    $username = "bobbtables@gmail.com"; //use your email host username
-    $password = "tables123";            //use your email host password
+    $host = "smtp.gmail.com";        //use your smtp host for your email host
+    $username = "address@email.com"; //use your email host username
+    $password = "userpassword";      //use your email host password
 
     $headers = array('From' => $from,
         'To' => $to,
