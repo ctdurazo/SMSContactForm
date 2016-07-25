@@ -32,7 +32,7 @@ if (isset($_REQUEST['submit'])) {
 
     //create mail form
     $from = "<address@email.com>"; //replace with your email host
-    $to = "<number@host.com>";     //replace with your SMS email, i.e. xxxxxxxxxx@vzwpix.com for verizon
+    $to = "<number@host.com>";     //replace with your SMS email, i.e. xxxxxxxxxx@vtext.com for verizon
     $subject = 'Message from a site visitor ' . $name;
 
     $body = 'From: ' . $name . "\n";
